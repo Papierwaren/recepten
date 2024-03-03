@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+  
+    h1 {
+      color: #F28500;
+      font-family: Viga;
+      font-size: 45px;
+    }
+  }
+  
+  .Container {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  
+  nav {
+      margin: 0;
+      padding: 10px 20px;
+      background-color: #F28500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #F3EFE0;
+  }
+  
+  .logo {
+      max-width: 100px;
+      max-height: 50px;
+  }
+  
+  .navigation {
+    justify-content: space-around;
+      display: flex;
+      font-family: Viga;
+      color: #F3EFE0;
+      font-size: 30px;
+  }
+  
+  .navigation a {
+      text-decoration: none;
+      color: #F3EFE0;
+      padding: 10px 15px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s; /* Voeg een overgang toe voor een vloeiend effect */
+  }
+  
+  .navigation a:hover {
+      background-color: #de7b02; /* Verander de achtergrondkleur bij hover */
+  }
+  
+  .icon {
+    padding: 10px 15px;
+    border-radius: 5px;
+  
+  }
+  .icon:hover {
+      background-color: #de7b02;
+  }
+  
+  html {
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .footer {
+    footer {
+      bottom: 0px;
+      width: 100%;
+      height: 2.5rem;
+    }
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #3E2F5B;
+      height: 100px;
+      padding-left: 30px;
+    }
+  
+    /*De individuele links*/
+    li {
+      float: left;
+      color: #F3EFE0;
+      font-size: 30px;
+      font-family: Viga;
+    }
+  
+    /*Ook de individuele links*/
+    li a {
+      display: block;
+      color: #F3EFE0;
+      text-align: center;
+      padding: 30px 25px;
+      text-decoration: none;
+    }
+  
+    /*Individuele links voor als je muis over de link is*/
+    li a:hover {
+      color: #F28500;
+    }
+  }
