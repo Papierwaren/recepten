@@ -6,13 +6,68 @@ body {
       font-family: Viga;
       font-size: 45px;
     }
+
+    label {
+      color: #F28500;
+      font-family: Viga;
+      font-size: 30px;
+    }
+    
+  }
+  .submit-button {
+    background-color: #3E2F5B;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+select[name="soort_id"] {
+  background-color: #F3EFE0;
+  font-family: oxygen;
+  color: #3E2F5B;
+  width: 20%;
+  padding: 10px;
+  border: 2px solid #3E2F5B;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+      background-color: #F3EFE0;
+      border: 2px solid #3E2F5B;
+      width: 40%;
+      padding: 10px;
+      box-sizing: border-box;
+      font-family: oxygen;
+  }
+  
+  /* Specifieke stijlen voor beschrijving en bereidingstijd */
+  input[name="beschrijving"],
+  input[name="bereidingstijd"],
+  input[name="aantal_personen"],
+  textarea[name="beschrijving"] {
+      width: 40%;
+  }
+  
+  /* Specifieke stijl voor aantal personen */
+  input[name="aantal_personen"] {
+      width: 10%; /* Pas de breedte aan naar wens */
   }
   
   .Container {
     padding-left: 2rem;
     padding-right: 1rem;
   }
-  
+
   nav {
       margin: 0;
       padding: 10px 20px;
@@ -67,6 +122,7 @@ body {
   
   .footer {
     footer {
+     
       bottom: 0px;
       width: 100%;
       height: 2.5rem;
@@ -103,4 +159,21 @@ body {
     li a:hover {
       color: #F28500;
     }
+
+    p span {
+      font-weight: bold;
+      font-family: Viga;
+  }
+
+  p span:nth-child(1) {
+      color: #009246; /* Groen voor 'web' */
+  }
+
+  p span:nth-child(2) {
+      color: #ffffff; /* Wit voor 'cep' */
+  }
+
+  p span:nth-child(3) {
+      color: #ce2b37; /* Rood voor 'tie' */
+  }
   }

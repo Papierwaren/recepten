@@ -131,4 +131,21 @@ body {
     li a:hover {
       color: #F28500;
     }
+
+    p span {
+      font-weight: bold;
+      font-family: Viga;
   }
+
+  p span:nth-child(1) {
+      color: #009246; /* Groen voor 'web' */
+  }
+
+  p span:nth-child(2) {
+      color: #ffffff; /* Wit voor 'cep' */
+  }
+
+  p span:nth-child(3) {
+      color: #ce2b37; /* Rood voor 'tie' */
+  }
+}

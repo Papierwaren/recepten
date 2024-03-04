@@ -1,32 +1,11 @@
 body {
     margin: 0;
-    
+  
     h1 {
-      color: #3E2F5B;
-      text-align: center;
+      color: #F28500;
       font-family: Viga;
-      font-size: 50px;
+      font-size: 45px;
     }
-  }
-   /*Dit + input is voor de input box*/
-  form {
-    color: #3E2F5B;
-    text-align: center;
-    font-family: Viga;
-    font-size: 50px;
-  }
-  
-  button {
-    text-align: center;
-    margin: 50px 50%;
-    padding: 10px px;
-  }
-  
-  input {
-    color: #3E2F5B;
-    text-align: center;
-    font-family: Viga;
-    font-size: 30px;
   }
   
   .Container {
@@ -79,9 +58,8 @@ body {
       background-color: #de7b02;
   }
   
-  
   html {
-    background-color: 'white';
+    background-color: white;
     font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
     width: 100%;
@@ -94,7 +72,6 @@ body {
       width: 100%;
       height: 2.5rem;
     }
-    
   
     ul {
       list-style-type: none;
@@ -126,23 +103,28 @@ body {
     /*Individuele links voor als je muis over de link is*/
     li a:hover {
       color: #F28500;
-  
     }
-
-    p span {
-      font-weight: bold;
-      font-family: Viga;
   }
-
-  p span:nth-child(1) {
-      color: #009246; /* Groen voor 'web' */
-  }
-
-  p span:nth-child(2) {
-      color: #ffffff; /* Wit voor 'cep' */
-  }
-
-  p span:nth-child(3) {
-      color: #ce2b37; /* Rood voor 'tie' */
-  }
+  table{
+  
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    
+  
+  td,th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  
+   tr:nth-child(even){background-color: #f2f2f2;}
+  
+  tr:hover {background-color: #ddd;}
+  th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #F28500;
+      color: white;
+    }
   }

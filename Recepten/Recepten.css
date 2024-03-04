@@ -66,45 +66,43 @@ body {
     height: 100%;
     width: 100%;
   }
-    .footer {
-      footer {
-        bottom: 0px;
-        width: 100%;
-        height: 2.5rem;
-      }
+  .footer {
+    footer {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 2.5rem;
+    }
   
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #3E2F5B;
-        height: 100px;
-        padding-left: 30px;
-      }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #3E2F5B;
+      height: 100px;
+      padding-left: 30px;
+    }
   
-      /*De individuele links*/
-      li {
-        float: left;
-        color: #F3EFE0;
-        font-size: 30px;
-        font-family: Viga;
-      }
+    /*De individuele links*/
+    li {
+      float: left;
+      color: #F3EFE0;
+      font-size: 30px;
+      font-family: Viga;
+    }
   
-      /*Ook de individuele links*/
-      li a {
-        display: block;
-        color: #F3EFE0;
-        text-align: center;
-        padding: 30px 25px;
-        text-decoration: none;
-      }
+    /*Ook de individuele links*/
+    li a {
+      display: block;
+      color: #F3EFE0;
+      text-align: center;
+      padding: 30px 25px;
+      text-decoration: none;
+    }
   
-      /*Individuele links voor als je muis over de link is*/
-      li a:hover {
-        color: #F28500;
-      }
-  
-  
-  
+    /*Individuele links voor als je muis over de link is*/
+    li a:hover {
+      color: #F28500;
+    }
   }

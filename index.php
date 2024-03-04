@@ -70,12 +70,12 @@ if ($result->num_rows > 0) {
       <footer>
         <ul>
           <li>
-            <p></p><span style="color:#009246">Web</span>
-            <span style="color:#ffffff">cep</span>
-            <span style="color:#ce2b37">tie</span></p>
+          <p>
+                <span style="color:#ce2b37">Web</span><span style="color:#ffffff">cep</span><span style="color:#009246">tie</span>
+            </p>
           </li>
-          <li><a href="index.php">Contact</a></li>
-          <li><a href="index.php">Algemene voorwaarden</a </li>
+          <li><a href="../Footer/Contact.php">Contact</a></li>
+          <li><a href="../Footer/Voorwaarden.php">Algemene voorwaarden</a </li>
         </ul>
       </footer>
     </div>
