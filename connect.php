@@ -11,9 +11,4 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connectie mislukt: " . $conn->connect_error);
 }
-
-// Voer hier je query's uit of voer andere databasebewerkingen uit
-
-// Sluit de verbinding
-$conn->close();
 ?>

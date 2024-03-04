@@ -43,19 +43,7 @@
          Recente recepten
      </h2>  
 
-     <?php
-$servername = "localhost";
-$username = "root";
-$password = " ";
-$dbname = "recepten";
-
-// Maak een verbinding met de database
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Controleer de verbinding
-if ($conn->connect_error) {
-    die("Connectie mislukt: " . $conn->connect_error);
-}
+     <?php require_once 'connect.php';
 
 // Voer hier je query's uit of voer andere databasebewerkingen uit
      // Query om gegevens op te halen uit de 'gebruiker'-tabel
@@ -76,10 +64,7 @@ if ($result->num_rows > 0) {
     echo "</table>";
 } else {
     echo "Geen resultaten gevonden";
-}
-// Sluit de verbinding
-$conn->close();
-     ?>
+}?>
 
     <div class="footer">
       <footer>
