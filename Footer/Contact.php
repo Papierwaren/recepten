@@ -4,7 +4,7 @@
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width">
-            <title>Webcepten - Contact</title>
+            <title>Webceptie - Contact</title>
             <link href="Contact.css" rel="stylesheet" type="text/css" />
 
           </head>

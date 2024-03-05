@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Webcepten</title>
+  <title>Webceptie</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -31,40 +31,18 @@
     <!--De kop-->
     <header>
       <h1>De lekkerste recepten</h1>
-      <h2> Uit eigen keuken</h2>
+      <h2 class="Keuken"> Uit eigen keuken</h2>
     </header>
 
     <div class="Container">
-
-
+    <h3>Recente recepten</h3>  
+    <button><a href="../Recepten/Recepten.php">Meer</a></button>
 
     </div>
-      <h2 class= rc>
-         Recente recepten
-     </h2>  
+     
 
      <?php require_once 'connect.php';
-
-// Voer hier je query's uit of voer andere databasebewerkingen uit
-     // Query om gegevens op te halen uit de 'gebruiker'-tabel
-$sql = "SELECT * FROM gebruiker";
-$result = $conn->query($sql);
-
-// Controleer of er resultaten zijn
-if ($result->num_rows > 0) {
-    // Resultaten in een HTML-tabel weergeven
-    echo "<table border='1'>";
-    echo "<tr><th>id</th><th>Email</th><th>Wachtwoord</th></tr>";
-
-    // Output data van elke rij
-    while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["gebruiker_id"]."</td><td>".$row["Email"]."</td><td>".$row["Wachtwoord"]."</td></tr>";
-    }
-
-    echo "</table>";
-} else {
-    echo "Geen resultaten gevonden";
-}?>
+?>
 
     <div class="footer">
       <footer>

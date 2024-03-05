@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Webcepten - Plaats een recept</title>
+    <title>Webceptie - Plaats een recept</title>
     <link href="Post.css" rel="stylesheet" type="text/css" />
 </head>
 

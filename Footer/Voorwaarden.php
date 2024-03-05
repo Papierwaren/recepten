@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Webcepten - Algemene voorwaarden</title>
+  <title>Webceptie - Algemene voorwaarden</title>
   <link href="voorwaarden.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -33,20 +33,19 @@
       <header>
         <h1>Algemene voorwaarden</h1>
       </header>
-      <h3>
-        Op deze pagina kunt u de algemene voorwaarden van Webceptie.nl vinden.
-      </h3>
+      <p>Op deze pagina kunt u de algemene voorwaarden van Webceptie.nl vinden.</p>
 
-      <h2>
-      Onwaarheden in recepten 
-      </h2>
-      <h3>
-        Webceptie.nl is een platform waarop iedereen recepten kan plaatsen. Hierom is het niet     mogelijk webceptie.nl verantwoordelijk te stellen voor onwaarheden in de geplaatste recepten. Wel kunt u via Webceptie@lekkererecepten.nl een verzoek insturen om een recept te laten verwijderen. 
-      </h3>
+      <h2>Onwaarheden in recepten </h2>
+      <p>Webceptie.nl is een platform waarop iedereen recepten kan plaatsen. Hierom is het niet     mogelijk webceptie.nl verantwoordelijk te stellen voor onwaarheden in de geplaatste recepten. Wel kunt u via Webceptie@lekkererecepten.nl een verzoek insturen om een recept te laten verwijderen. </p>
+      
       <h2>Privacy</h2>
-      <h3>Op deze website wordt geen gebruik gemaakt van cookies, wel zijn er heerlijke koekjes recepten te vinden onder het kopje Snack. Verder verwerken wij alleen uw e-mail en wachtwoord dat voor webceptie aanmaakt om in te loggen op de website mogelijk te maken. </h3>
+      <p>Op deze website wordt geen gebruik gemaakt van cookies, wel zijn er heerlijke koekjes recepten te vinden onder het kopje Snack. Verder verwerken wij alleen uw e-mail en wachtwoord dat voor webceptie aanmaakt om in te loggen op de website mogelijk te maken. </p>
 
     </div>
+    
+    
+    
+    
     <div class="footer">
     <footer>
         <ul>

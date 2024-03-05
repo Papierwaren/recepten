@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Webcepten - Login</title>
+  <title>Webceptie - Login</title>
   <link href="Login.css" rel="stylesheet" type="text/css" />
 </head>
 

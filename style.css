@@ -27,9 +27,27 @@ body {
       background-size: cover;
     }
   }
-  
-  .rc{
-    color: black; 
+
+  button {
+    background-color: #3E2F5B;
+    font-family: oxygen;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 22%;
+    top: 20px;
+    border-radius: 25px;
+  }
+
+  a {
+    color:#F3EFE0;
+    font-family: oxygen;
+    font-weight: bold;
+  }
+  h3 {
+    color: #F28500;
+      font-family: Viga;
+      font-size: 45px;
   }
   
   .Container {
