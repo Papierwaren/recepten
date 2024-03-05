@@ -7,6 +7,11 @@ body {
       font-size: 45px;
   
     }
+
+    h2{
+      color:#3E2F5B;
+      font-family: Viga;
+    }
   }
   
   .Container {
@@ -105,4 +110,18 @@ body {
     li a:hover {
       color: #F28500;
     }
+  }
+
+  .recept {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .extra-info {
+    display: none;
+  }
+
+.recept:hover .extra-info {
+    display: block;
   }
