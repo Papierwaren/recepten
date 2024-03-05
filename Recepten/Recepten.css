@@ -1,6 +1,9 @@
 body {
-    margin: 0;
-  
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
     h1 {
       color: #F28500;
       font-family: Viga;
@@ -14,9 +17,40 @@ body {
     }
   }
   
+  .wrapper {
+    flex: 1;
+  }
+
+  #filter-form {
+    padding: 10px;
+    border-radius: 1px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 128px;
+    left: 230px;
+  }
+
+  input {
+    background-color: #F3EFE0;
+    font-family: oxygen;
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  /* Stijl voor de tekst in het filterformulier */
+  #filter-form select {
+    font-family: oxygen;
+    color: #3E2F5B;
+    padding: 5px;
+    border: 1px solid #3E2F5B;
+    border-radius: 3px;
+    width: 150px; /* Pas dit aan indien nodig */
+  }
+
   .Container {
     padding-left: 2rem;
     padding-right: 1rem;
+    overflow-y: auto;
   }
   
     nav {
@@ -73,8 +107,6 @@ body {
   }
   .footer {
     footer {
-      position: absolute;
-      bottom: 0px;
       width: 100%;
       height: 2.5rem;
     }
@@ -115,7 +147,9 @@ body {
   .recept {
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #3E2F5B;
+    background-color: #F3EFE0;
+    font-family: oxygen;
   }
 
   .extra-info {
