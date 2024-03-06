@@ -27,6 +27,7 @@ if(isset($_POST['submit'])){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Webceptie - Plaats een recept</title>
+    <link rel="icon" href="../Images/WebceptieLogo.png">
     <link href="Post.css" rel="stylesheet" type="text/css" />
 </head>
 

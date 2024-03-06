@@ -9,6 +9,7 @@ require_once '../connect.php';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Webceptie - Recepten</title>
+  <link rel="icon" href="../Images/WebceptieLogo.png">
   <link href="Recepten.css" rel="stylesheet" type="text/css" />
 </head>
 

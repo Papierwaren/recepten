@@ -169,14 +169,14 @@ body {
   }
 
   p span:nth-child(1) {
-      color: #009246; /* Groen voor 'web' */
+      color: #009246;
   }
 
   p span:nth-child(2) {
-      color: #ffffff; /* Wit voor 'cep' */
+      color: #ffffff;
   }
 
   p span:nth-child(3) {
-      color: #ce2b37; /* Rood voor 'tie' */
+      color: #ce2b37;
   }
   }

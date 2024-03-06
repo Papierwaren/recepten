@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Webceptie - Login</title>
+  <link rel="icon" href="../Images/WebceptieLogo.png">
   <link href="Login.css" rel="stylesheet" type="text/css" />
 </head>
 
