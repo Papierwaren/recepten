@@ -40,9 +40,38 @@ require_once 'connect.php';
     </header>
 
     <div class="Container">
-    <h3>Recente recepten</h3>  
+    <h3>Een greep uit de recepten:</h3>  
     <button><a href="../Recepten/Recepten.php">Meer</a></button>
+    <div class="index-recepten">
+        <?php
+        // Query om 4 willekeurige recepten op te halen
+        $sql = "SELECT recept.naam, soort.Gerecht, recept.beschrijving, recept.ingredienten, 
+                recept.bereiding, recept.tijd, recept.aantal_pers 
+                FROM recept 
+                INNER JOIN soort ON recept.soort_id = soort.soort_id
+                ORDER BY RAND() LIMIT 4";
 
+        $resultaat = $conn->query($sql);
+
+        // Controleer of er resultaten zijn
+        if ($resultaat) {
+          // Loop door de resultaten en toon de gegevens
+          while ($row = $resultaat->fetch_assoc()) {
+            echo '<div class="recept-box">';
+            echo '<h4>' . $row['naam'] . '</h4>';
+            echo '<p>Beschrijving: ' . $row['beschrijving'] . '</p>';
+            echo '<p>Soort: ' . $row['Gerecht'] . '</p>';
+            echo '<p class="extra-info">Ingredienten: ' . $row['ingredienten'] . '</p>';
+            echo '<p class="extra-info">Bereiding: ' . $row['bereiding'] . '</p>';
+            echo '<p class="extra-info">Tijd: ' . $row['tijd'] . '</p>';
+            echo '<p class="extra-info">Aantal personen: ' . $row['aantal_pers'] . '</p>';
+            echo '</div>';
+          }
+        } else {
+          echo "Fout bij het ophalen van recepten: " . $conn->error;
+        }
+        ?>
+      </div>
     </div>
 
     <div class="footer">

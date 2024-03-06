@@ -1,3 +1,10 @@
+html {
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
 body {
     margin: 0;
   
@@ -20,14 +27,8 @@ body {
     p{
       font-family: oxygen;
     }
-  }
-  
-  .Container {
-    padding-left: 2rem;
-    padding-right: 1rem;
-  }
-  
-  nav {
+
+    nav {
       margin: 0;
       padding: 10px 20px;
       background-color: #F28500;
@@ -36,7 +37,14 @@ body {
       align-items: center;
       color: #F3EFE0;
   }
+  }
   
+  .Container {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  
+  /*CSS voor navigatiebalk*/
   .logo {
       max-width: 100px;
       max-height: 50px;
@@ -68,17 +76,12 @@ body {
     border-radius: 5px;
   
   }
+
   .icon:hover {
       background-color: #de7b02;
   }
   
-  html {
-    background-color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    height: 100%;
-    width: 100%;
-  }
-  
+ /*CSS voor de footer*/ 
   .footer {
     footer {
       position: absolute;

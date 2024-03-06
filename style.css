@@ -1,6 +1,23 @@
+html {
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+  width: 100%;
+}
 body {
     margin: 0;
   
+    header {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      margin: 0;
+      text-shadow: 3px 3px 4px black;
+      height: 250px;
+      background-image: url(../Images/Homepage-bg.png);
+      background-color: #3E2F5B;
+      background-size: cover;
+    }
+
     h1 {
       color: #F3EFE0;
       font-family: Viga;
@@ -16,49 +33,41 @@ body {
       text-decoration: underline;
     }
   
-    header {
-      padding-top: 120px;
-      padding-bottom: 120px;
-      margin: 0;
-      text-shadow: 3px 3px 4px black;
-      height: 250px;
-      background-image: url(../Images/Homepage-bg.png);
-      background-color: #3E2F5B;
-      background-size: cover;
+    h3 {
+      color: #F28500;
+        font-family: Viga;
+        font-size: 45px;
     }
-  }
 
-  button {
-    background-color: #3E2F5B;
-    font-family: oxygen;
-    width: 100px;
-    height: 30px;
-    position: absolute;
-    left: 22%;
-    top: 20px;
-    border-radius: 25px;
-  }
-
-  a {
-    color:#F3EFE0;
-    font-family: oxygen;
-    font-weight: bold;
-  }
-  h3 {
-    color: #F28500;
+    h4 {
+      color:#3E2F5B;
       font-family: Viga;
-      font-size: 45px;
-  }
+      text-align: center;
+      font-size: 30px;
+    }
+
+    button {
+      background-color: #3E2F5B;
+      font-family: oxygen;
+      width: 100px;
+      height: 30px;
+      position: absolute;
+      left: 32%;
+      top: 20px;
+      border-radius: 25px;
+    }
   
-  .Container {
-    position: relative;
-    min-height: 100vh;
-    /*32,33 nodig footer?*/
-    padding-left: 2rem;
-    padding-right: 1rem;
-  }
-  
-  nav {
+    a {
+      color:#F3EFE0;
+      font-family: oxygen;
+      font-weight: bold;
+    }
+
+    p{
+      font-family: oxygen;
+    }
+
+    nav {
       margin: 0;
       padding: 10px 20px;
       background-color: #F28500;
@@ -67,37 +76,61 @@ body {
       align-items: center;
       color: #F3EFE0;
   }
-  
+  }
+  /*einde van body CSS*/
+
+
+/*CSS van de willekeurige recepten*/
+  .recept-box {
+
+    margin: 20px;
+    padding: 10px;
+    background-color: #F3EFE0;
+    border: 2px solid #3E2F5B;
+    width: 21%;
+    float: left;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .recept-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .extra-info {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .recept-box:hover .extra-info {
+    display: block;
+  }
+
+/*Omvat alles*/
+  .Container {
+    position: relative;
+    min-height: 100vh;
+    /*32,33 nodig footer?*/
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+/*CSS van de navigatiebalk*/  
   .logo {
       max-width: 100px;
       max-height: 50px;
   }
-  
-  nav {
-    margin: 0;
-    padding: 10px 20px;
-    background-color: #F28500;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #F3EFE0;
-}
-
-.logo {
-    max-width: 100px;
-    max-height: 50px;
-}
 
 .navigation {
   justify-content: space-around;
     display: flex;
-    font-family: Viga;
     color: #F3EFE0;
     font-size: 30px;
 }
 
 .navigation a {
     text-decoration: none;
+    font-family: Viga;
     color: #F3EFE0;
     padding: 10px 15px;
     margin: 0 10px;
@@ -106,7 +139,7 @@ body {
 }
 
 .navigation a:hover {
-    background-color: #de7b02; /* Verander de achtergrondkleur bij hover */
+    background-color: #de7b02;
 }
 
 .icon {
@@ -117,14 +150,8 @@ body {
 .icon:hover {
     background-color: #de7b02;
 }
-  
-  html {
-    background-color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    height: 100%;
-    width: 100%;
-  }
-  
+
+/*CSS van de footer*/
   .footer {
     footer {
      
@@ -171,14 +198,14 @@ body {
   }
 
   p span:nth-child(1) {
-      color: #009246; /* Groen voor 'web' */
+      color: #009246;
   }
 
   p span:nth-child(2) {
-      color: #ffffff; /* Wit voor 'cep' */
+      color: #ffffff;
   }
 
   p span:nth-child(3) {
-      color: #ce2b37; /* Rood voor 'tie' */
+      color: #ce2b37;
   }
 }
