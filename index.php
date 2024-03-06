@@ -1,3 +1,8 @@
+<?php
+// Inclusief de databaseverbinding
+require_once '../connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -15,7 +20,7 @@
     <!--De navigatie balk-->
     <nav>
         <div class="logo">  
-            <img src="../Images/NoordlesIcon.png" alt="Het Logo">
+            <img src="../Images/WebceptieLogo.png" alt="Het Logo">
         </div>
 
         <div class="navigation">
@@ -39,10 +44,6 @@
     <button><a href="../Recepten/Recepten.php">Meer</a></button>
 
     </div>
-     
-
-     <?php require_once 'connect.php';
-?>
 
     <div class="footer">
       <footer>

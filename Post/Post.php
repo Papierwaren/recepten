@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
         <!-- De navigatie balk -->
         <nav>
         <div class="logo">
-            <img src="../Images/NoordlesIcon.png" alt="Het Logo">
+            <img src="../Images/WebceptieLogo.png" alt="Het Logo">
         </div>
 
         <div class="navigation">
