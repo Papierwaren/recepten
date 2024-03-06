@@ -33,7 +33,7 @@ require_once '../connect.php';
     </nav>
 
     <div class="Container">
-      <!-- Toegevoegd keuzemenu -->
+      <!-- Filter -->
       <form method="get" action="Recepten.php" id="filter-form">
         <select name="soort" id="soort">
           <option value="alle">Alle</option>
@@ -53,25 +53,24 @@ require_once '../connect.php';
       </header>
 
       <?php
-      // Lees de geselecteerde soort uit de URL
+      // Lees de geselecteerde soort uit het filter
       $geselecteerdeSoort = isset($_GET['soort']) ? $_GET['soort'] : 'alle';
 
-      // Query om recepten op te halen met JOIN-operatie
       $sql = "SELECT recept.naam, soort.Gerecht, recept.beschrijving, recept.ingredienten, 
               recept.bereiding, recept.tijd, recept.aantal_pers 
               FROM recept 
               INNER JOIN soort ON recept.soort_id = soort.soort_id";
 
-      // Voeg een WHERE-clausule toe als een specifieke soort is geselecteerd
+      // WHERE voor als er gefilterd is
       if ($geselecteerdeSoort !== 'alle') {
         $sql .= " WHERE soort.Gerecht = '$geselecteerdeSoort'";
       }
 
       $resultaat = $conn->query($sql);
 
-      // Controleer of er resultaten zijn
+      // Controleert of er gegevens zijn
       if ($resultaat) {
-        // Loop door de resultaten en toon de gegevens
+        // Toon gegevens zolang deze er zijn
         while ($row = $resultaat->fetch_assoc()) {
           echo '<div class="recept">';
           echo '<h2>' . $row['naam'] . '</h2>';

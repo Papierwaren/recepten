@@ -49,11 +49,7 @@
     <div class="footer">
     <footer>
         <ul>
-          <li>
-          <p>
-                <span style="color:#ce2b37">Web</span><span style="color:#ffffff">cep</span><span style="color:#009246">tie</span>
-            </p>
-          </li>
+          <li><p><span style="color:#ce2b37">Web</span><span style="color:#ffffff">cep</span><span style="color:#009246">tie</span></p></li>
           <li><a href="Contact.php">Contact</a></li>
           <li><a href="Voorwaarden.php">Algemene voorwaarden</a </li>
         </ul>
