@@ -1,5 +1,4 @@
 <?php
-// Inclusief de databaseverbinding
 require_once 'connect.php';
 ?>
 
@@ -44,7 +43,6 @@ require_once 'connect.php';
     <button><a href="../Recepten/Recepten.php">Meer</a></button>
     <div class="index-recepten">
         <?php
-        // Query om 4 willekeurige recepten op te halen
         $sql = "SELECT recept.naam, soort.Gerecht, recept.beschrijving, recept.ingredienten, 
                 recept.bereiding, recept.tijd, recept.aantal_pers 
                 FROM recept 
@@ -53,9 +51,7 @@ require_once 'connect.php';
 
         $resultaat = $conn->query($sql);
 
-        // Controleer of er resultaten zijn
         if ($resultaat) {
-          // Loop door de resultaten en toon de gegevens
           while ($row = $resultaat->fetch_assoc()) {
             echo '<div class="recept-box">';
             echo '<h4>' . $row['naam'] . '</h4>';

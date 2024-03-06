@@ -1,5 +1,4 @@
 <?php
-// Inclusief de databaseverbinding
 require_once '../connect.php';
 ?>
 
@@ -53,7 +52,6 @@ require_once '../connect.php';
       </header>
 
       <?php
-      // Lees de geselecteerde soort uit het filter
       $geselecteerdeSoort = isset($_GET['soort']) ? $_GET['soort'] : 'alle';
 
       $sql = "SELECT recept.naam, soort.Gerecht, recept.beschrijving, recept.ingredienten, 
@@ -61,16 +59,13 @@ require_once '../connect.php';
               FROM recept 
               INNER JOIN soort ON recept.soort_id = soort.soort_id";
 
-      // WHERE voor als er gefilterd is
       if ($geselecteerdeSoort !== 'alle') {
         $sql .= " WHERE soort.Gerecht = '$geselecteerdeSoort'";
       }
 
       $resultaat = $conn->query($sql);
 
-      // Controleert of er gegevens zijn
       if ($resultaat) {
-        // Toon gegevens zolang deze er zijn
         while ($row = $resultaat->fetch_assoc()) {
           echo '<div class="recept">';
           echo '<h2>' . $row['naam'] . '</h2>';

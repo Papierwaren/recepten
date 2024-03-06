@@ -1,9 +1,7 @@
 <?php
 require_once '../connect.php';
 
-// Controleren of het formulier is ingediend
 if(isset($_POST['submit'])){
-    // Formulier in variabele
     $naam = $_POST['naam'];
     $soort_id = $_POST['soort_id'];
     $beschrijving = $_POST['beschrijving'];
@@ -12,7 +10,6 @@ if(isset($_POST['submit'])){
     $bereidingstijd = $_POST['bereidingstijd'];
     $aantal_personen = $_POST['aantal_personen'];
 
-    // Gegevens naar database
     $sql = "INSERT INTO recept (Naam, soort_id, Beschrijving, Ingredienten, Bereiding, Tijd, Aantal_pers) VALUES ('$naam', '$soort_id', '$beschrijving', '$ingredienten', '$bereiding', '$bereidingstijd', '$aantal_personen')";
 
     if (mysqli_query($conn, $sql)) {
