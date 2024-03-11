@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Webceptie - Algemene voorwaarden</title>
+  <link rel="icon" href="../Images/WebceptieLogo.png">
   <link href="voorwaarden.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -49,9 +50,9 @@
     <div class="footer">
     <footer>
         <ul>
-          <li><p><span style="color:#ce2b37">Web</span><span style="color:#ffffff">cep</span><span style="color:#009246">tie</span></p></li>
-          <li><a href="Contact.php">Contact</a></li>
-          <li><a href="Voorwaarden.php">Algemene voorwaarden</a </li>
+        <li><p><span style="color:#ce2b37">Web</span><span style="color:#ffffff">cep</span><span style="color:#009246">tie</span></p></li>
+        <li><a href="Contact.php">Contact</a></li>
+        <li><a href="Voorwaarden.php">Algemene voorwaarden</a </li>
         </ul>
       </footer>
     </div>

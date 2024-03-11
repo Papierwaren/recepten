@@ -5,6 +5,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width">
             <title>Webceptie - Contact</title>
+            <link rel="icon" href="../Images/WebceptieLogo.png">
             <link href="Contact.css" rel="stylesheet" type="text/css" />
 
           </head>
